@@ -1,15 +1,8 @@
-// scripts.js
-
-// Exemplo de futura animação ou scroll suave
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
+// Script para animação do header, animação das seções, etc.
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
   
+  sections.forEach(section => {
+    section.classList.add("animate__animated", "animate__fadeInUp");
+  });
+});
