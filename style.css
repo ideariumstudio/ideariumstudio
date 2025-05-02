@@ -25,146 +25,131 @@ header {
 header nav {
   display: flex;
   flex-direction: column;
-  justify-content: center
-  ;
+  justify-content: center;
   align-items: center;
-  }
-  
-  header nav h1 {
-  font-size: 1.6em;
+}
+
+header nav h1 {
+  font-size: 1.8em;
   margin: 0;
   padding-bottom: 5px;
-  }
-  
-  header nav ul {
+}
+
+header nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
   margin: 0;
-  padding: 0;
-  }
-  
-  header nav ul li {
-  padding: 6px 10px;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li {
+  padding: 5px 10px;
+}
+
+header nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95em;
+  font-weight: bold;
+  font-size: 1em;
   transition: color 0.3s ease;
-  }
-  
-  header nav ul li a:hover {
+}
+
+header nav ul li a:hover {
   color: #f39c12;
-  }
-  
-  /* Seções principais */
-  section {
-  padding: 80px 15px 30px;
+}
+
+/* Seções principais */
+section {
+  padding: 80px 15px 20px;
   text-align: center;
   max-width: 900px;
-  margin-top: 100px;
+  margin-top: 120px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  }
-  
-  h2 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
   color: #333;
   transition: transform 0.5s ease-out;
-  }
-  
-  h2:hover {
+}
+
+h2:hover {
   transform: scale(1.05);
-  }
-  
-  p {
-  font-size: 1em;
+}
+
+p {
+  font-size: 1.1em;
   color: #555;
-  line-height: 1.5;
-  }
-  
-  ul {
-  list-style: none;
-  padding: 0;
-  }
-  
-  ul li {
-  font-size: 1em;
-  margin: 8px 0;
-  }
-  
-  .cta-btn, .contact-btn {
+  line-height: 1.6;
+}
+
+.cta-btn {
   background-color: #f39c12;
   color: white;
-  padding: 10px 20px;
-  font-weight: 600;
+  padding: 10px 25px;
+  font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s ease;
-  font-size: 0.95em;
-  }
-  
-  .cta-btn:hover, .contact-btn:hover {
+}
+
+.cta-btn:hover {
   background-color: #e67e22;
   transform: scale(1.05);
-  }
-  
-  .portfolio-items {
-  display: flex;
-  justify-content: space-around;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  }
-  
-  .portfolio-item {
-  width: 28%;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .portfolio-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
-  }
-  
-  .portfolio-item img {
-  width: 100%;
-  height: auto;
-  }
-  
-  form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+}
+
+.contato-links {
   margin-top: 20px;
-  align-items: center;
-  }
-  
-  form input,
-  form textarea {
-  padding: 10px;
+}
+
+.contato-links h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contato-links a {
+  display: block;
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contato-links a:hover {
+  color: #ffffff;
+}
+
+/* Formulário - Contato e Recrutamento */
+form input, form textarea {
   width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.recrutamento-form {
   max-width: 500px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  }
-  
-  footer {
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
   text-align: center;
   padding: 15px;
   background-color: #f0f0f0;
-  margin-top: 30px;
-  font-size: 0.95em;
+  margin-top: 40px;
+  font-size: 1em;
   color: #555;
-  }
+}
